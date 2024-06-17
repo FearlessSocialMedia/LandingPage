@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+    transition: .1s ease-in-out;
 }
 
 section{
@@ -48,7 +49,42 @@ h3{
 .btns button{
     background-color: black;
     color: white;
-    border: none;
+    border: black dashed;
+    border-radius: 40px;
+    padding-inline: 20px;
+    padding-block: 10px;
+    margin-inline: 10px;
+    font-size: 1.5rem;
+}
+
+.btns button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.btns input{
+    padding-inline: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btns input:focus{
+    outline: none;
+}
+
+.btns2{
+    width: max-content;
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.btns2 button{
+    background-color: black;
+    color: white;
+    border: black dashed;
     border-radius: 40px;
     padding-inline: 20px;
     padding-block: 10px;
